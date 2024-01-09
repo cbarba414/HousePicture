@@ -46,7 +46,7 @@ public class Picture
             window.changeColor("black");
             window.moveHorizontal(-120);
             window.moveVertical(40);
-            window.changeSize(40);
+            window.changeSize(0);
             window.makeVisible();
 
             roof.changeColor ("brown");
