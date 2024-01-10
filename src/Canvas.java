@@ -121,11 +121,11 @@ public class Canvas
         else if(colorString.equals("blue")) {
             graphic.setColor(new Color(30, 75, 220));
         } else if (colorString.equals ("lightGreen")){
-            graphic.setColor(new Color (183, 228, 178));
+            graphic.setColor(new Color (194, 228, 185));
         } else if(colorString.equals("yellow")) {
             graphic.setColor(new Color(255, 230, 0));
         } else if (colorString.equals ("brown")) {
-            graphic.setColor (new Color (219, 151, 108));
+            graphic.setColor (new Color (203, 167, 144));
         } else if(colorString.equals("green")) {
             graphic.setColor(new Color(80, 160, 60));
         }
@@ -134,8 +134,13 @@ public class Canvas
         }
         else if(colorString.equals("white")) {
             graphic.setColor(Color.white);
-        }// else if (colorString.equals ("shadowLightGreen")) {
-           // graphic.setColor (new Color ())
+        } else if (colorString.equals ("black")) {
+            graphic.setColor (new Color (0,0,0));
+        } else if (colorString.equals ("garageGrey")) {
+            graphic.setColor (new Color (238,238,238));
+        }
+        } else if (colorString.equals ("brickRed")) {
+            graphic.setColor (new Color (203, 119, 86));
         } else {
             graphic.setColor(Color.black);
         }
