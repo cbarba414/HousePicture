@@ -138,7 +138,7 @@ public class Canvas
             graphic.setColor (new Color (0,0,0));
         } else if (colorString.equals ("garageGrey")) {
             graphic.setColor (new Color (238,238,238));
-        }
+
         } else if (colorString.equals ("brickRed")) {
             graphic.setColor (new Color (203, 119, 86));
         } else {
@@ -152,7 +152,7 @@ public class Canvas
      * used when producing animations.
      * @param  milliseconds  the number
      */
-    public void wait(int milliseconds)
+ /*   public void wait(int milliseconds)
     {
         try
         {

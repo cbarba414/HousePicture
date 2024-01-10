@@ -182,7 +182,7 @@ public class Person
                     y+(int)(bh*0.5), y+(int)(bh*0.2), y+(int)(bh*0.4), y+(int)(bh*0.2),
                     y, y-hh+3, y-hh-3, y-hh-hh, y-hh-hh, y-hh-3, y-hh+3 };
             canvas.draw(this, color, new Polygon(xpoints, ypoints, 21));
-            canvas.wait(10);
+            //canvas.wait(10);
         }
     }
 
