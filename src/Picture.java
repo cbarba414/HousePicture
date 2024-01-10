@@ -1,7 +1,7 @@
 import java.awt.*;
 // tomorrow's plans: maybe add the lines to the garage, add the
 // plants outside the house, the door (and designs), the two windows
-// and the colors for everything.
+// and the colors for everything.   yay nice
 public class Picture
 {
     private Square wall;
