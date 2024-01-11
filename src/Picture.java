@@ -98,6 +98,13 @@ public class Picture {
 
     private Circle doorHandle;
 
+    private Square darkWindowThing;
+
+    private Square background;
+
+    private Circle sunCover;
+
+    private Square lightWindowGrey;
     private Person guy;
     private boolean drawn;
 
@@ -158,6 +165,10 @@ public class Picture {
         garageGreyFour = new Square ();
         garageWhiteFour = new Square ();
         doorHandle = new Circle ();
+        darkWindowThing = new Square ();
+        background = new Square ();
+        sunCover = new Circle ();
+        lightWindowGrey = new Square ();
         guy = new Person ();
         drawn = false;
     }
@@ -174,7 +185,13 @@ public class Picture {
     {
         if(!drawn) {
 
-            wallTwoRoofSquare.changeColor ("brown");
+            background.changeColor("skyBlue");
+            background.moveHorizontal(-350);
+            background.moveVertical(-150);
+            background.changeSize(1000);
+            background.makeVisible();
+
+            wallTwoRoofSquare.changeColor ("darkBrown");
             wallTwoRoofSquare.moveHorizontal(-180);
             wallTwoRoofSquare.moveVertical(-38);
             wallTwoRoofSquare.changeSize(240);
@@ -216,7 +233,6 @@ public class Picture {
             entranceSteps.changeSize(50);
             entranceSteps.makeVisible();
 
-
             potTwo.changeColor("clayRed");
             potTwo.moveHorizontal(24);
             potTwo.moveVertical(152);
@@ -235,11 +251,17 @@ public class Picture {
             brickEntrance.changeSize(220);
             brickEntrance.makeVisible();
 
-            darkWindow.changeColor ("darkWindowGrey");
+            darkWindow.changeColor ("white");
             darkWindow.moveHorizontal(20);
             darkWindow.moveVertical(70);
             darkWindow.changeSize(40);
             darkWindow.makeVisible();
+
+            darkWindowThing.changeColor ("darkWindowGrey");
+            darkWindowThing.moveHorizontal(27);
+            darkWindowThing.moveVertical(72);
+            darkWindowThing.changeSize(25);
+            darkWindowThing.makeVisible();
 
             darkWindowCover.changeColor ("lightGreen");
             darkWindowCover.moveHorizontal(20);
@@ -247,11 +269,17 @@ public class Picture {
             darkWindowCover.changeSize(40);
             darkWindowCover.makeVisible();
 
-            lightWindow.changeColor ("lightWindowGrey");
+            lightWindow.changeColor ("white");
             lightWindow.moveHorizontal(88);
             lightWindow.moveVertical(65);
             lightWindow.changeSize(47);
             lightWindow.makeVisible();
+
+            lightWindowGrey.changeColor("lightWindowGrey");
+            lightWindowGrey.moveHorizontal(94);
+            lightWindowGrey.moveVertical(68);
+            lightWindowGrey.changeSize(34);
+            lightWindowGrey.makeVisible();
 
             potThreeBallOne.changeColor("plantGreen");
             potThreeBallOne.moveHorizontal(170);
@@ -486,6 +514,16 @@ public class Picture {
             sun.moveVertical(-60);
             sun.changeSize(60);
             sun.makeVisible();
+
+            sunCover.changeColor ("skyBlue");
+            sunCover.moveHorizontal(163);
+            sunCover.moveVertical(-60);
+            sunCover.changeSize(60);
+            sunCover.makeVisible();
+
+
+
+
             drawn = true;
         }
     }
@@ -546,7 +584,11 @@ public class Picture {
         garageGreyFour.changeColor("garageGrey");
         garageWhiteFour.changeColor("white");
         doorHandle.changeColor("black");
+        background.changeColor("skyBlue");
         guy.changeColor("lightRose");
+        darkWindowThing.changeColor ("darkWindowGrey");
+        sunCover.changeColor ("skyBlue");
+        lightWindowGrey.changeColor("lightWindowGrey");
     }
 
     /**
@@ -606,6 +648,10 @@ public class Picture {
         garageWhiteFour.changeColor("white");
         doorHandle.changeColor("black");
         guy.changeColor("lightRose");
+        darkWindowThing.changeColor ("darkWindowGrey");
+        background.changeColor("skyBlue");
+        sunCover.changeColor ("skyBlue");
+        lightWindowGrey.changeColor("lightWindowGrey");
 
     }
 }

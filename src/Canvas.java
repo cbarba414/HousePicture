@@ -163,6 +163,11 @@ public class Canvas
             graphic.setColor (new Color (173, 66, 107));
         } else if (colorString.equals ("woodBrown")) {
             graphic.setColor (new Color (94, 73, 71));
+        } else if (colorString.equals("darkBrown")) {
+            graphic.setColor(new Color (166,136,118));
+            // just in case I want to make the roof nicer
+        } else if (colorString.equals ("skyBlue")) {
+            graphic.setColor(new Color (25,47,71));
         } else {
             graphic.setColor(Color.black);
         }
