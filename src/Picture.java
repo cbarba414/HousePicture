@@ -3,6 +3,7 @@ import java.awt.*;
 // plants outside the house, the door (and designs), the two windows
 // and the colors for everything.   yay nice
 // and change background color
+// and add a circle for the door handle mayeb?
 public class Picture {
     private Square wall;
     private Square wallTwo;
@@ -47,6 +48,25 @@ public class Picture {
     private Triangle roofLineWallTwo;
 
     private Triangle roofLineWallOne;
+    private Square pot;
+
+    private Circle potBall;
+
+    private Circle potBallTwo;
+
+    private Square potTwo;
+
+    private Square potThree;
+
+    private Circle potTwoBall;
+
+    private Circle potTwoBallTwo;
+
+    private Circle potTwoBallThree;
+
+    private Circle potTwoRoseOne;
+
+    private Circle potTwoRoseTwo;
     private boolean drawn;
 
 
@@ -80,6 +100,16 @@ public class Picture {
         lightWindowCover = new Square ();
         roofLineWallTwo = new Triangle ();
         roofLineWallOne = new Triangle ();
+        pot = new Square ();
+        potBall = new Circle ();
+        potBallTwo = new Circle ();
+        potTwo = new Square ();
+        potThree = new Square ();
+        potTwoBall = new Circle ();
+        potTwoBallTwo = new Circle ();
+        potTwoBallThree = new Circle ();
+        potTwoRoseOne = new Circle ();
+        potTwoRoseTwo = new Circle ();
         drawn = false;
     }
 
@@ -97,7 +127,7 @@ public class Picture {
 
             wallTwoRoofSquare.changeColor ("brown");
             wallTwoRoofSquare.moveHorizontal(-180);
-            wallTwoRoofSquare.moveVertical(-43);
+            wallTwoRoofSquare.moveVertical(-38);
             wallTwoRoofSquare.changeSize(240);
             wallTwoRoofSquare.makeVisible();
 
@@ -137,6 +167,19 @@ public class Picture {
             entranceSteps.changeSize(50);
             entranceSteps.makeVisible();
 
+
+            potTwo.changeColor("clayRed");
+            potTwo.moveHorizontal(24);
+            potTwo.moveVertical(152);
+            potTwo.changeSize(47);
+            potTwo.makeVisible();
+
+            potThree.changeColor("clayRed");
+            potThree.moveHorizontal(88);
+            potThree.moveVertical(150);
+            potThree.changeSize(40);
+            potThree.makeVisible();
+
             brickEntrance.changeColor ("brickRed");
             brickEntrance.moveHorizontal(-90);
             brickEntrance.moveVertical(160);
@@ -166,6 +209,54 @@ public class Picture {
             lightWindowCover.moveVertical(105);
             lightWindowCover.changeSize(47);
             lightWindowCover.makeVisible();
+
+            potTwoBallThree.changeColor("darkPlantGreen");
+            potTwoBallThree.moveHorizontal(101);
+            potTwoBallThree.moveVertical(140);
+            potTwoBallThree.changeSize(42);
+            potTwoBallThree.makeVisible();
+
+            potTwoBall.changeColor ("plantGreen");
+            potTwoBall.moveHorizontal(95);
+            potTwoBall.moveVertical(154);
+            potTwoBall.changeSize(30);
+            potTwoBall.makeVisible();
+
+            potTwoBallTwo.changeColor("plantGreen");
+            potTwoBallTwo.moveHorizontal(118);
+            potTwoBallTwo.moveVertical(146);
+            potTwoBallTwo.changeSize(40);
+            potTwoBallTwo.makeVisible();
+
+            potBall.changeColor ("plantGreen");
+            potBall.moveHorizontal(14);
+            potBall.moveVertical(140);
+            potBall.changeSize(30);
+            potBall.makeVisible();
+
+            potBallTwo.changeColor ("plantGreen");
+            potBallTwo.moveHorizontal(11);
+            potBallTwo.moveVertical(105);
+            potBallTwo.changeSize(37);
+            potBallTwo.makeVisible();
+
+            potTwoRoseOne.changeColor("lightRose");
+            potTwoRoseOne.moveHorizontal(110);
+            potTwoRoseOne.moveVertical(165);
+            potTwoRoseOne.changeSize(10);
+            potTwoRoseOne.makeVisible();
+
+            potTwoRoseTwo.changeColor("lightRose");
+            potTwoRoseTwo.moveHorizontal(138);
+            potTwoRoseTwo.moveVertical(155);
+            potTwoRoseTwo.changeSize(10);
+            potTwoRoseTwo.makeVisible();
+
+            pot.changeColor ("clayRed");
+            pot.moveHorizontal(-60);
+            pot.moveVertical(140);
+            pot.changeSize(20);
+            pot.makeVisible();
 
             wall.changeColor ("lightGreen");
             wall.moveHorizontal(-290);
@@ -278,6 +369,17 @@ public class Picture {
         lightWindowCover.changeColor("lightGreen");
         roofLineWallTwo.changeColor ("white");
         roofLineWallOne.changeColor ("white");
+        pot.changeColor ("clayRed");
+        potBall.changeColor ("plantGreen");
+        potBallTwo.changeColor ("plantGreen");
+        potTwo.changeColor("clayRed");
+        potThree.changeColor("clayRed");
+        potTwoBall.changeColor ("plantGreen");
+        potTwoBallTwo.changeColor("plantGreen");
+        potTwoBallThree.changeColor("darkPlantGreen");
+        potTwoRoseOne.changeColor("lightRose");
+        potTwoRoseTwo.changeColor("lightRose");
+
     }
 
     /**
@@ -310,5 +412,16 @@ public class Picture {
         lightWindowCover.changeColor("lightGreen");
         roofLineWallTwo.changeColor ("white");
         roofLineWallOne.changeColor ("white");
+        pot.changeColor ("clayRed");
+        potBall.changeColor ("plantGreen");
+        potBallTwo.changeColor ("plantGreen");
+        potTwo.changeColor("clayRed");
+        potThree.changeColor("clayRed");
+        potTwoBall.changeColor ("plantGreen");
+        potTwoBallTwo.changeColor("plantGreen");
+        potTwoBallThree.changeColor("darkPlantGreen");
+        potTwoRoseOne.changeColor("lightRose");
+        potTwoRoseTwo.changeColor("lightRose");
+
     }
 }

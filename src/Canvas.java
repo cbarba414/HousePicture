@@ -151,6 +151,16 @@ public class Canvas
             graphic.setColor (new Color (76,76,82));
         } else if (colorString.equals ("lightWindowGrey")) {
             graphic.setColor (new Color (170,170,173));
+        } else if (colorString.equals ("clayRed")) {
+            graphic.setColor (new Color (138, 53, 28));
+        } else if (colorString.equals ("plantGreen")) {
+            graphic.setColor (new Color (40,99,25));
+        } else if (colorString.equals ("darkPlantGreen")) {
+            graphic.setColor (new Color (25,64,16));
+        } else if (colorString.equals ("lightRose")) {
+            graphic.setColor (new Color (250,107,162));
+        } else if (colorString.equals ("darkRose")) {
+            graphic.setColor (new Color (173, 66, 107));
         } else {
             graphic.setColor(Color.black);
         }
