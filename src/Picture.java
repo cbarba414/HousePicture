@@ -1,9 +1,7 @@
 import java.awt.*;
-// tomorrow's plans: maybe add the lines to the garage, add the
-// plants outside the house, the door (and designs), the two windows
-// and the colors for everything.   yay nice
 // and change background color
-// and add a circle for the door handle mayeb?
+// and add the person please!
+// and add the sun! maybe a moon? stars?
 public class Picture {
     private Square wall;
     private Square wallTwo;
@@ -67,6 +65,40 @@ public class Picture {
     private Circle potTwoRoseOne;
 
     private Circle potTwoRoseTwo;
+
+    private Circle potTwoRoseThree;
+
+    private Circle potTwoRoseFour;
+
+    private Circle potTwoRoseFive;
+
+    private Circle potThreeBallOne;
+
+    private Square potThreeWood;
+
+    private Square potThreeWoodCoverOne;
+
+    private Square potThreeWoodCoverTwo;
+
+    private Square garageGreyOne;
+
+    private Square garageWhiteOne;
+
+    private Square garageGreyTwo;
+
+    private Square garageWhiteTwo;
+
+    private Square garageGreyThree;
+
+    private Square garageWhiteThree;
+
+    private Square garageGreyFour;
+
+    private Square garageWhiteFour;
+
+    private Circle doorHandle;
+
+    private Person guy;
     private boolean drawn;
 
 
@@ -110,6 +142,23 @@ public class Picture {
         potTwoBallThree = new Circle ();
         potTwoRoseOne = new Circle ();
         potTwoRoseTwo = new Circle ();
+        potTwoRoseThree = new Circle ();
+        potTwoRoseFour = new Circle ();
+        potTwoRoseFive = new Circle ();
+        potThreeBallOne = new Circle ();
+        potThreeWood = new Square ();
+        potThreeWoodCoverOne = new Square ();
+        potThreeWoodCoverTwo = new Square ();
+        garageGreyOne = new Square ();
+        garageWhiteOne = new Square ();
+        garageGreyTwo = new Square ();
+        garageWhiteTwo = new Square ();
+        garageGreyThree = new Square ();
+        garageWhiteThree = new Square ();
+        garageGreyFour = new Square ();
+        garageWhiteFour = new Square ();
+        doorHandle = new Circle ();
+        guy = new Person ();
         drawn = false;
     }
 
@@ -204,11 +253,35 @@ public class Picture {
             lightWindow.changeSize(47);
             lightWindow.makeVisible();
 
+            potThreeBallOne.changeColor("plantGreen");
+            potThreeBallOne.moveHorizontal(170);
+            potThreeBallOne.moveVertical(107);
+            potThreeBallOne.changeSize(45);
+            potThreeBallOne.makeVisible();
+
             lightWindowCover.changeColor ("lightGreen");
             lightWindowCover.moveHorizontal(88);
             lightWindowCover.moveVertical(105);
             lightWindowCover.changeSize(47);
             lightWindowCover.makeVisible();
+
+            potThreeWood.changeColor("woodBrown");
+            potThreeWood.moveHorizontal(97);
+            potThreeWood.moveVertical(105);
+            potThreeWood.changeSize(47);
+            potThreeWood.makeVisible();
+
+            potThreeWoodCoverOne.changeColor("lightGreen");
+            potThreeWoodCoverOne.moveHorizontal(120);
+            potThreeWoodCoverOne.moveVertical(105);
+            potThreeWoodCoverOne.changeSize(24);
+            potThreeWoodCoverOne.makeVisible();
+
+            potThreeWoodCoverTwo.changeColor("lightGreen");
+            potThreeWoodCoverTwo.moveHorizontal(120);
+            potThreeWoodCoverTwo.moveVertical(128);
+            potThreeWoodCoverTwo.changeSize(24);
+            potThreeWoodCoverTwo.makeVisible();
 
             potTwoBallThree.changeColor("darkPlantGreen");
             potTwoBallThree.moveHorizontal(101);
@@ -251,6 +324,24 @@ public class Picture {
             potTwoRoseTwo.moveVertical(155);
             potTwoRoseTwo.changeSize(10);
             potTwoRoseTwo.makeVisible();
+
+            potTwoRoseThree.changeColor("lightRose");
+            potTwoRoseThree.moveHorizontal(128);
+            potTwoRoseThree.moveVertical(172);
+            potTwoRoseThree.changeSize(10);
+            potTwoRoseThree.makeVisible();
+
+            potTwoRoseFour.changeColor("darkRose");
+            potTwoRoseFour.moveHorizontal(120);
+            potTwoRoseFour.moveVertical(152);
+            potTwoRoseFour.changeSize(10);
+            potTwoRoseFour.makeVisible();
+
+            potTwoRoseFive.changeColor("darkRose");
+            potTwoRoseFive.moveHorizontal(110);
+            potTwoRoseFive.moveVertical(143);
+            potTwoRoseFive.changeSize(10);
+            potTwoRoseFive.makeVisible();
 
             pot.changeColor ("clayRed");
             pot.moveHorizontal(-60);
@@ -330,11 +421,71 @@ public class Picture {
             middleGarageCircle.changeSize(25);
             middleGarageCircle.makeVisible();
 
-           /* sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible(); */
+            garageGreyOne.changeColor ("garageGrey");
+            garageGreyOne.moveHorizontal(-260);
+            garageGreyOne.moveVertical(119);
+            garageGreyOne.changeSize(160);
+            garageGreyOne.makeVisible();
+
+            garageWhiteOne.changeColor("white");
+            garageWhiteOne.moveHorizontal(-260);
+            garageWhiteOne.moveVertical(122);
+            garageWhiteOne.changeSize(160);
+            garageWhiteOne.makeVisible();
+
+            garageGreyTwo.changeColor("garageGrey");
+            garageGreyTwo.moveHorizontal(-260);
+            garageGreyTwo.moveVertical(135);
+            garageGreyTwo.changeSize(160);
+            garageGreyTwo.makeVisible();
+
+            garageWhiteTwo.changeColor("white");
+            garageWhiteTwo.moveHorizontal(-260);
+            garageWhiteTwo.moveVertical(138);
+            garageWhiteTwo.changeSize(160);
+            garageWhiteTwo.makeVisible();
+
+            garageGreyThree.changeColor("garageGrey");
+            garageGreyThree.moveHorizontal(-260);
+            garageGreyThree.moveVertical(152);
+            garageGreyThree.changeSize(160);
+            garageGreyThree.makeVisible();
+
+            garageWhiteThree.changeColor("white");
+            garageWhiteThree.moveHorizontal(-260);
+            garageWhiteThree.moveVertical(155);
+            garageWhiteThree.changeSize(160);
+            garageWhiteThree.makeVisible();
+
+            garageGreyFour.changeColor("garageGrey");
+            garageGreyFour.moveHorizontal(-260);
+            garageGreyFour.moveVertical(168);
+            garageGreyFour.changeSize(160);
+            garageGreyFour.makeVisible();
+
+           garageWhiteFour.changeColor("white");
+           garageWhiteFour.moveHorizontal(-260);
+           garageWhiteFour.moveVertical(171);
+           garageWhiteFour.changeSize(160);
+           garageWhiteFour.makeVisible();
+
+           doorHandle.changeColor("black");
+            doorHandle.moveHorizontal(71);
+            doorHandle.moveVertical(142);
+            doorHandle.changeSize(7);
+            doorHandle.makeVisible();
+
+            guy.changeColor("lightRose");
+            guy.moveHorizontal(-90);
+            guy.moveVertical(71);
+            guy.makeVisible();
+
+
+           sun.changeColor("yellow");
+            sun.moveHorizontal(173);
+            sun.moveVertical(-60);
+            sun.changeSize(60);
+            sun.makeVisible();
             drawn = true;
         }
     }
@@ -347,7 +498,7 @@ public class Picture {
         wall.changeColor("black");
         window.changeColor("white");
         roof.changeColor("black");
-        sun.changeColor("black");
+        sun.changeColor("yellow");
         miniRoofOne.changeColor ("brown");
         leftGarageWindow.changeColor ("black");
         rightGarageWindow.changeColor ("black");
@@ -379,7 +530,23 @@ public class Picture {
         potTwoBallThree.changeColor("darkPlantGreen");
         potTwoRoseOne.changeColor("lightRose");
         potTwoRoseTwo.changeColor("lightRose");
-
+        potTwoRoseThree.changeColor("lightRose");
+        potTwoRoseFour.changeColor("darkRose");
+        potTwoRoseFive.changeColor("darkRose");
+        potThreeBallOne.changeColor("plantGreen");
+        potThreeWood.changeColor("woodBrown");
+        potThreeWoodCoverOne.changeColor("lightGreen");
+        potThreeWoodCoverTwo.changeColor("lightGreen");
+        garageGreyOne.changeColor ("garageGrey");
+        garageWhiteOne.changeColor("white");
+        garageGreyTwo.changeColor("garageGrey");
+        garageWhiteTwo.changeColor("white");
+        garageGreyThree.changeColor("garageGrey");
+        garageWhiteThree.changeColor("white");
+        garageGreyFour.changeColor("garageGrey");
+        garageWhiteFour.changeColor("white");
+        doorHandle.changeColor("black");
+        guy.changeColor("lightRose");
     }
 
     /**
@@ -422,6 +589,23 @@ public class Picture {
         potTwoBallThree.changeColor("darkPlantGreen");
         potTwoRoseOne.changeColor("lightRose");
         potTwoRoseTwo.changeColor("lightRose");
+        potTwoRoseThree.changeColor("lightRose");
+        potTwoRoseFour.changeColor("darkRose");
+        potTwoRoseFive.changeColor("darkRose");
+        potThreeBallOne.changeColor("plantGreen");
+        potThreeWood.changeColor("woodBrown");
+        potThreeWoodCoverOne.changeColor("lightGreen");
+        potThreeWoodCoverTwo.changeColor("lightGreen");
+        garageGreyOne.changeColor ("garageGrey");
+        garageWhiteOne.changeColor("white");
+        garageGreyTwo.changeColor("garageGrey");
+        garageWhiteTwo.changeColor("white");
+        garageGreyThree.changeColor("garageGrey");
+        garageWhiteThree.changeColor("white");
+        garageGreyFour.changeColor("garageGrey");
+        garageWhiteFour.changeColor("white");
+        doorHandle.changeColor("black");
+        guy.changeColor("lightRose");
 
     }
 }

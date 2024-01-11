@@ -161,6 +161,8 @@ public class Canvas
             graphic.setColor (new Color (250,107,162));
         } else if (colorString.equals ("darkRose")) {
             graphic.setColor (new Color (173, 66, 107));
+        } else if (colorString.equals ("woodBrown")) {
+            graphic.setColor (new Color (94, 73, 71));
         } else {
             graphic.setColor(Color.black);
         }
