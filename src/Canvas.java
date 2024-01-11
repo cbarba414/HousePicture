@@ -141,6 +141,16 @@ public class Canvas
 
         } else if (colorString.equals ("brickRed")) {
             graphic.setColor (new Color (203, 119, 86));
+        } else if (colorString.equals ("darkerBrickRed")) {
+            graphic.setColor (new Color (158,90,64));
+        } else if (colorString.equals ("doorBrown")) {
+            graphic.setColor (new Color (59,34,24));
+        } else if (colorString.equals ("glassyBlue")) {
+            graphic.setColor (new Color (195,196,222));
+        } else if (colorString.equals ("darkWindowGrey")) {
+            graphic.setColor (new Color (76,76,82));
+        } else if (colorString.equals ("lightWindowGrey")) {
+            graphic.setColor (new Color (170,170,173));
         } else {
             graphic.setColor(Color.black);
         }
